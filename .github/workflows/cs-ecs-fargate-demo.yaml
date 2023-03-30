@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ECR_REGISTRY: ${{ secrets.873129370700}}.dkr.ecr.us-east-1.amazonaws.com
+      ECR_REGISTRY: ${{ secrets.AWS_ACCOUNT_ID}}.dkr.ecr.us-east-1.amazonaws.com
       FALCON_IMAGE: ecs-pipeline-demo/falcon-sensor:6.53.0-3601.container.x86_64.Release.US-1
       ECR_REPO: ecs-pipeline-demo/app-images
       GITHUB_SHA: ${{ github.sha }}
